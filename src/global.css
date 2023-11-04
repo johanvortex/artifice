@@ -1,11 +1,11 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  body {
-      font-family: 'Arial', sans-serif; /* Cambia 'Arial' por la fuente que desees */
-    }
-    .trans{
-        width: 100vw; /* Ancho al 100% del viewport */
-    }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Arial", sans-serif; /* Cambia 'Arial' por la fuente que desees */
+}
+.trans {
+  width: 97vw; /* Ancho al 100% del viewport */
+}

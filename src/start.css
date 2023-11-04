@@ -1,75 +1,69 @@
 body {
-    margin: 0; /* Sin márgenes en el cuerpo */
-    padding: 0; /* Sin relleno en el cuerpo */
-  }
-  
-  /* Estilo para el contenedor (container) que contendrá el contenido y el fondo */
-  .container {
-    background-size: cover; /* Escala la imagen de fondo para cubrir todo el contenedor y que se vea bien la imagen no cortada  */
-    background-position: center; /* Coloca la imagen de fondo en el centro del contenedor */
-    height: 100vh; /* Asegura que el fondo ocupe toda la altura de la ventana (viewport) */
-    background-image: url('/src/assets/img/fondoinicio.jpg') ; /* Ruta a tu imagen de fondo */
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo con transparencia (ajusta el valor 0.7) */
-    padding-top: 20px; /* Agrega espacio de relleno alrededor del contenido */
-    
-    
-    
-  }
+  margin: 0; /* Sin márgenes en el cuerpo */
+  padding: 0; /* Sin relleno en el cuerpo */
+}
 
-  .app-header {
-    display: flex; /* Utiliza un diseño flexible (flexbox) para el encabezado. */
-    justify-content: space-between; /* Espacia los elementos del encabezado uniformemente. */
-    align-items: center; /* Centra verticalmente los elementos en el encabezado. */
-    padding: 1rem; /* Agrega relleno al encabezado. */
-    width: 100%;
-    padding-bottom: 0%;
-    padding-top: 1%;
-    background-color: rgba(0, 0, 0, 0.6); /* Fondo completamente transparente */
-  }
-  
-  .app-header nav a {
-    margin: 0 1.0rem; /* Agrega márgenes a los elementos del menú de navegación. */
-    color: #d6c6b4; /* Establece el color del texto en blanco. */
-    text-decoration: none; /* Quita la decoración de subrayado de los hipervínculos. */
-    position: relative; /* Añadimos una posición relativa para permitir el estilo de la línea debajo. */
-  }
+/* Estilo para el contenedor (container) que contendrá el contenido y el fondo */
+.container {
+  background-size: cover; /* Escala la imagen de fondo para cubrir todo el contenedor y que se vea bien la imagen no cortada  */
+  background-position: center; /* Coloca la imagen de fondo en el centro del contenedor */
+  height: 100vh; /* Asegura que el fondo ocupe toda la altura de la ventana (viewport) */
+  background-image: url("/src/assets/img/fondoinicio.jpg"); /* Ruta a tu imagen de fondo */
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  padding-top: 20px; /* Agrega espacio de relleno alrededor del contenido */
+}
 
-  /* Estilos para los elementos específicos cuando se pasa el cursor sobre ellos */
+.app-header {
+  display: flex; /* Utiliza un diseño flexible (flexbox) para el encabezado. */
+  justify-content: space-between; /* Espacia los elementos del encabezado uniformemente. */
+  align-items: center; /* Centra verticalmente los elementos en el encabezado. */
+  padding: 1rem; /* Agrega relleno al encabezado. */
+  width: 100%;
+  padding-bottom: 0%;
+  padding-top: 1%;
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo completamente transparente */
+}
+
+.app-header nav a {
+  margin: 0 1rem; /* Agrega márgenes a los elementos del menú de navegación. */
+  color: #d6c6b4; /* Establece el color del texto en blanco. */
+  text-decoration: none; /* Quita la decoración de subrayado de los hipervínculos. */
+  position: relative; /* Añadimos una posición relativa para permitir el estilo de la línea debajo. */
+}
+
+/* Estilos para los elementos específicos cuando se pasa el cursor sobre ellos */
 .app-header nav a:hover {
-    color: #846851; /* Cambia el color del texto al pasar el cursor sobre el elemento. */
-  }
+  color: #846851; /* Cambia el color del texto al pasar el cursor sobre el elemento. */
+}
 
-  /* Línea debajo del elemento cuando se pasa el cursor sobre él */
+/* Línea debajo del elemento cuando se pasa el cursor sobre él */
 .app-header nav a:hover::after {
-    content: ''; /* Agregamos contenido al elemento generado (::after) para crear la línea. */
-    position: absolute;
-    left: 0;
-    bottom: -6px; /* Ajusta la posición de la línea debajo del texto. */
-    width: 100%;
-    height: 2px; /* Establece la altura de la línea. */
-    background: #c7b299; /* Cambia el color de la línea al pasar el cursor sobre el elemento. */
-  }
+  content: ""; /* Agregamos contenido al elemento generado (::after) para crear la línea. */
+  position: absolute;
+  left: 0;
+  bottom: -6px; /* Ajusta la posición de la línea debajo del texto. */
+  width: 100%;
+  height: 2px; /* Establece la altura de la línea. */
+  background: #c7b299; /* Cambia el color de la línea al pasar el cursor sobre el elemento. */
+}
 
-  
-  
-  .slide {
-    width: 100%; /* Establece el ancho de cada diapositiva al 100%. */
-    transition: all 0.3s; /* Agrega una transición suave para las diapositivas. */
-  }
-  
-  .slide img {
-    max-width: 100%; /* Ajusta el ancho máximo de las imágenes al 100%. */
-    
-  }
-  .separator {
-    border-left: 1px solid #ECF0F1 ; /* Crea una línea vertical sólida de 1 píxel de grosor y color blanco. */
-    height: 1.5rem; /* Establece la altura de la línea vertical. Puedes ajustarla según tus necesidades. */
-    display: inline-block; /* Hace que la línea sea un elemento en línea en lugar de un bloque. */
-    margin: 0.5 0.5rem; /* Agrega espacio a ambos lados de la línea. Puedes ajustar el valor según desees. */
-    vertical-align: middle; /* Alinea verticalmente la línea con los elementos circundantes. */
-  }
+.slide {
+  width: 100%; /* Establece el ancho de cada diapositiva al 100%. */
+  transition: all 0.3s; /* Agrega una transición suave para las diapositivas. */
+}
 
-  /* Estilo para la sección principal */
+.slide img {
+  max-width: 100%; /* Ajusta el ancho máximo de las imágenes al 100%. */
+}
+.separator {
+  border-left: 1px solid #ecf0f1; /* Crea una línea vertical sólida de 1 píxel de grosor y color blanco. */
+  height: 1.5rem; /* Establece la altura de la línea vertical. Puedes ajustarla según tus necesidades. */
+  display: inline-block; /* Hace que la línea sea un elemento en línea en lugar de un bloque. */
+  margin: 0.5 0.5rem; /* Agrega espacio a ambos lados de la línea. Puedes ajustar el valor según desees. */
+  vertical-align: middle; /* Alinea verticalmente la línea con los elementos circundantes. */
+}
+
+/* Estilo para la sección principal */
 .section {
   display: flex; /* Utiliza un contenedor flexible para alinear las secciones lado a lado */
   background-size: cover; /* Escala la imagen de fondo para cubrir todo el espacio */
@@ -84,7 +78,12 @@ body {
 /* Estilo para la sección izquierda */
 .left-section {
   flex: 1; /* La sección izquierda ocupa todo el espacio disponible en el contenedor */
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo con transparencia en la sección izquierda */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Fondo con transparencia en la sección izquierda */
   padding: 20px; /* Espaciado interior */
   color: #d6c6b4; /* Color de texto en la sección izquierda */
 }
@@ -95,14 +94,34 @@ body {
 }
 
 /* Estilo para la sección derecha */
-.right-section {
-  flex: 1; /* La sección derecha ocupa todo el espacio disponible en el contenedor */
-  background-color: rgba(0, 0, 0, 0.7); /* Fondo con transparencia en la sección derecha */
-  padding: 20px; /* Espaciado interior */
-  color: #d6c6b4; /* Color de texto en la sección derecha */
+
+.carousel-container {
+  max-width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
 }
-.carousel-container{
-    max-width: 40%; 
-    margin-left: 30%;
-    margin-top: 20%;
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

@@ -7,5 +7,6 @@ body {
   font-family: "Arial", sans-serif; /* Cambia 'Arial' por la fuente que desees */
 }
 .trans {
-  width: 97vw; /* Ancho al 100% del viewport */
+  width: 100%;
+  height: 100%; /* Ancho al 100% del viewport */
 }

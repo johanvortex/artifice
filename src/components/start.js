@@ -15,7 +15,7 @@ import { Grid } from "@mui/material";
 function App() {
   return (
     <div className="container">
-      {/* <div className="app-header">
+      <div className="app-header">
         <div className="logo">
           <img
             src={Logo}
@@ -29,89 +29,160 @@ function App() {
           <a href="/blog">Servicios</a>
           <a href="/media">Galerias</a>
           <a href="/shortcode">Contacto</a>
-          <div className="separator"></div> 
+          <div className="separator"></div>
           <a href="/search">Blog</a>
         </nav>
-      </div> */}
-      <div className="section">
-        {/* <div className="left-section">
-          <img
-            src={Logo}
-            alt="Logo"
-            style={{ maxWidth: "400px", maxHeight: "250px" }}
-          ></img>
-          <h3>
-            Diseñamos tu mundo interior. En artífice, creamos espacios
-            funcionales y armoniosos que mejoran tu calidad de vida. Ofrecemos
-            asesoría personalizada, diseño de calidad, producción y entrega
-            puntual. Con experiencia en proyectos para constructoras y clientes
-            particulares, transformamos tus sueños en realidad. Bienvenido a
-            artífice.
-          </h3>
-        </div> */}
-        <div className="carousel-container">
-          <Grid container spacing={2}>
-            <Grid item xs={12} lg={6}>
-                <div style={{ width: 400, height: 330, borderRadius: 20 }}>
-                  <Swiper
-                    slidesPerView={"auto"}
-                    spaceBetween={30}
-                    centeredSlides={true}
-                    autoplay={{
-                      delay: 2500,
-                      disableOnInteraction: false,
-                    }}
-                    pagination={{
-                      clickable: true,
-                    }}
-                    navigation={true}
-                    modules={[Autoplay, Pagination, Navigation]}
-                    className="mySwiper"
-                  >
-                    <SwiperSlide>
-                      <img src={Imagen1} alt="Imagen 1" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={Imagen2} alt="Imagen 1" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={Imagen3} alt="Imagen 1" />
-                    </SwiperSlide>
-                  </Swiper>
-                </div>
-            </Grid>
-            <Grid item xs={12} lg={6}>
-                <div style={{ width: 400, height: 330, borderRadius: 20 }}>
-                  <Swiper
-                    slidesPerView={"auto"}
-                    spaceBetween={30}
-                    centeredSlides={true}
-                    autoplay={{
-                      delay: 2500,
-                      disableOnInteraction: false,
-                    }}
-                    pagination={{
-                      clickable: true,
-                    }}
-                    navigation={true}
-                    modules={[Autoplay, Pagination, Navigation]}
-                    className="mySwiper"
-                  >
-                    <SwiperSlide>
-                      <img src={Imagen1} alt="Imagen 1" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={Imagen2} alt="Imagen 1" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={Imagen3} alt="Imagen 1" />
-                    </SwiperSlide>
-                  </Swiper>
-                </div>
-            </Grid>
-          </Grid>
-        </div>
       </div>
+      <Grid className="section" xs={12} lg={12}>
+        <Grid container spacing={2} className="carousel-container">
+          <Grid
+            item
+            xs={12}
+            md={6}
+            lg={6}
+            className="dis"
+            justifyContent="center"
+            alignItems="center"
+          >
+            <div className="left-section">
+              <img
+                src={Logo}
+                alt="Logo"
+                style={{ maxWidth: "400px", maxHeight: "250px" }}
+              ></img>
+              <h3 className="text">
+                Diseñamos tu mundo interior. En artífice, creamos espacios
+                funcionales y armoniosos que mejoran tu calidad de vida.
+                Ofrecemos asesoría personalizada, diseño de calidad, producción
+                y entrega puntual. Con experiencia en proyectos para
+                constructoras y clientes particulares, transformamos tus sueños
+                en realidad. Bienvenido a artífice.
+              </h3>
+            </div>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            md={6}
+            lg={6}
+            className="dis"
+            justifyContent="center"
+            marginTop={8}
+          >
+            {" "}
+            <div style={{ width: 400, height: 330, borderRadius: 20 }}>
+              <Swiper
+                slidesPerView={"auto"}
+                spaceBetween={30}
+                centeredSlides={true}
+                autoplay={{
+                  delay: 2500,
+                  disableOnInteraction: false,
+                }}
+               
+                navigation={true}
+                modules={[Autoplay, Pagination, Navigation]}
+                className="imgEffect"
+              >
+                <SwiperSlide>
+                  <div className="card">
+                    <img src={Imagen1} alt="Imagen 1" />
+                    <div
+                      className="cardConten"
+                      style={{
+                        background: "#D6C6B4",
+                        padding: "5px",
+                        width: "100%",
+                      }}
+                    >
+                      <p>
+                        {" "}
+                        <strong>PRIMAVERA</strong>
+                      </p>
+                    </div>
+                    <div
+                      className="cardContenFooter"
+                      style={{
+                        background: "#D6C6B4",
+                        padding: "10px",
+                        width: "50%",
+                      }}
+                    >
+                      <p>
+                        {" "}
+                        <strong>VER PROYECTO</strong>
+                      </p>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="card">
+                    <img src={Imagen2} alt="Imagen 1" />
+                    <div
+                      className="cardConten"
+                      style={{
+                        background: "#D6C6B4",
+                        padding: "5px",
+                        width: "100%",
+                      }}
+                    >
+                      <p>
+                        {" "}
+                        <strong>PRIMAVERA</strong>
+                      </p>
+                    </div>
+                    <div
+                      className="cardContenFooter"
+                      style={{
+                        background: "#D6C6B4",
+                        padding: "10px",
+                        width: "50%",
+                      }}
+                    >
+                      <p>
+                        {" "}
+                        <strong>VER PROYECTO</strong>
+                      </p>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="card">
+                    <img src={Imagen3} alt="Imagen 1" />
+                    <div
+                      className="cardConten"
+                      style={{
+                        background: "#D6C6B4",
+                        padding: "5px",
+                        width: "100%",
+                      }}
+                    >
+                      <p>
+                        {" "}
+                        <strong>PRIMAVERA</strong>
+                      </p>
+                    </div>
+                    <div
+                      className="cardContenFooter"
+                      style={{
+                        background: "#D6C6B4",
+                        padding: "10px",
+                        width: "50%",
+                      }}
+                    >
+                      <p>
+                        {" "}
+                        <strong>VER PROYECTO</strong>
+                      </p>
+                    </div>
+                  </div>
+                </SwiperSlide>
+             
+              </Swiper>
+            </div>{" "}
+          </Grid>
+        </Grid>
+      </Grid>
     </div>
   );
 }

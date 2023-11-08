@@ -24,9 +24,9 @@ function App() {
         </div>
         <nav className="nav-right">
           <a href="/">Inicio</a>
-          <a href="/shop">Nosotros</a>
           <a href="/blog">Servicios</a>
           <a href="/media">Galerias</a>
+          <a href="/shop">Nosotros</a>
           <a href="/shortcode">Contacto</a>
           <div className="separator"></div>
           <a href="/search">Blog</a>

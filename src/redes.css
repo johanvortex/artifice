@@ -71,10 +71,12 @@
 .right-sectionR h1 {
   margin-top: 10%;
   margin-bottom: 20%;
+  text-align: start;
 }
 .radi {
   background-color: #020202;
-  padding: 16px;
+  padding: 28px;
   border-radius: 50%;
-  height: 85px;
+  height: 121px;
+  cursor: pointer;
 }

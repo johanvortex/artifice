@@ -2,7 +2,6 @@ import React from "react";
 import "../start.css";
 import Logo from "../assets/img/Logo.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // Importa los estilos del carrusel
-import { Carousel } from "react-responsive-carousel";
 import Imagen1 from "../assets/img/carru1.jpg";
 import Imagen2 from "../assets/img/carru2.jpg";
 import Imagen3 from "../assets/img/carru3.jpg";
@@ -79,7 +78,6 @@ function App() {
                   delay: 2500,
                   disableOnInteraction: false,
                 }}
-               
                 navigation={true}
                 modules={[Autoplay, Pagination, Navigation]}
                 className="imgEffect"
@@ -128,7 +126,7 @@ function App() {
                     >
                       <p>
                         {" "}
-                        <strong>PRIMAVERA</strong>
+                        <strong>ARTCO</strong>
                       </p>
                     </div>
                     <div
@@ -159,7 +157,7 @@ function App() {
                     >
                       <p>
                         {" "}
-                        <strong>PRIMAVERA</strong>
+                        <strong>PALMA</strong>
                       </p>
                     </div>
                     <div
@@ -177,7 +175,6 @@ function App() {
                     </div>
                   </div>
                 </SwiperSlide>
-             
               </Swiper>
             </div>{" "}
           </Grid>

@@ -5,7 +5,6 @@ import '../src/global.css';
 import trans from './assets/img/transver.png';
 import Redes from './components/redes';
 import Nosotros from './components/nosotros'; 
-import Contactanos from './components/contactanos';
 import Galeria from './components/congaleria.js/galeria';
 
 

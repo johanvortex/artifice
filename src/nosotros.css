@@ -13,15 +13,14 @@
 .containerN {
   background-size: cover; /* Escala la imagen de fondo para cubrir todo el contenedor y que se vea bien la imagen no cortada  */
   background-position: center; /* Coloca la imagen de fondo en el centro del contenedor */
-  height: 100vh; /* Asegura que el fondo ocupe toda la altura de la ventana  */
+  height: 100%; /* Asegura que el fondo ocupe toda la altura de la ventana  */
   background-image: url('/src/assets/img/nosotros.jpg') ; /* Ruta a tu imagen de fondo */
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo con transparencia (ajusta el valor 0.7) */
-  padding-top: 10px; /* Agrega espacio de relleno alrededor del contenido */
+  padding: 18px; /* Agrega espacio de relleno alrededor del contenido */
   
 }
 .contmision{
   flex: 1; /* La sección izquierda ocupa todo el espacio disponible en el contenedor */
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo con transparencia en la sección izquierda */
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo con transparencia en la sección izquierda */
   padding: 20px; /* Espaciado interior */
   color: #d6c6b4; /* Color de texto en la sección izquierda */
 
@@ -54,7 +53,7 @@
   align-items: center;
   width: 100%;
   height: 80% ;
-  margin-top: -10%;
+  margin-top: 5%;
 }
 .linea.horizontal{
   margin-bottom: 20%;
@@ -93,6 +92,10 @@ text-align: start;
   text-align: start;
   margin-bottom: 2rem;
 }
+.contmision h1{
+  font-size: 4em;
+  margin-bottom: 2rem;
+}
 .left-sectionva {
   flex: 1; /* La sección izquierda ocupa todo el espacio disponible en el contenedor */
   padding: 20px; /* Espaciado interior */
@@ -107,7 +110,7 @@ text-align: start;
 }
 
 .icon {
-  color: rgb(66, 66, 70); /* Color del icono */
+  color: #d4ab8b; /* Color del icono */
   font-size: 3em; /* Tamaño del icono */
   margin-right: 20px; /* Margen a la derecha del icono */
  

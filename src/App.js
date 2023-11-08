@@ -6,6 +6,7 @@ import trans from './assets/img/transver.png';
 import Redes from './components/redes';
 import Nosotros from './components/nosotros'; 
 import Galeria from './components/congaleria.js/galeria';
+import Blog from './components/conblog/blogini';
 
 
 function App() {
@@ -18,6 +19,11 @@ function App() {
     <Redes/>
     <img className='trans' src={trans} alt="Imagen 2" />
     <Nosotros/>
+    <img className='trans' src={trans} alt="Imagen 2" />
+
+    <Contactanos/>
+    <img className='trans' src={trans} alt="Imagen 2" />
+    {/* <Blog/> */}
   </div>
 );
 }

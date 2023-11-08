@@ -7,6 +7,7 @@ import Redes from './components/redes';
 import Nosotros from './components/nosotros'; 
 import Contactanos from './components/contactanos';
 import Galeria from './components/congaleria.js/galeria';
+import Blog from './components/conblog/Appblog';
 
 
 function App() {
@@ -19,7 +20,8 @@ function App() {
     <Redes/>
     <img className='trans' src={trans} alt="Imagen 2" />
     <Nosotros/>
-    <Contactanos/>
+    <Contactanos/> 
+    <Blog/>
   </div>
 );
 }

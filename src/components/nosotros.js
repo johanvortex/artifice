@@ -1,6 +1,7 @@
 import React from 'react';
 import '../nosotros.css';
-import mision from'../assets/img/mision.jpg';
+import mision from'../assets/img/mision.png';
+import vision from'../assets/img/vision.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPalette, faHandshake, faCheck, faThumbsUp, faHeart, faSeedling, faLightbulb } from '@fortawesome/free-solid-svg-icons';
 
@@ -29,7 +30,7 @@ function Nosotros() {
           <div className='sectionN'>
             <div className='left-sectionN'> 
             <div className='stilo-img'>
-                 <img src={mision} alt="Logo" style={{ maxWidth: '800px', maxHeight: '500px' }}></img>
+                 <img src={vision} alt="Logo" style={{ maxWidth: '800px', maxHeight: '500px' }}></img>
               </div></div>
             <div className='right-sectionN'>
             <h1>Visión</h1>

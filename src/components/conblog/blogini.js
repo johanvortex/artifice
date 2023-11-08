@@ -24,7 +24,7 @@ const Blog = () => {
   return (
     <div>
       <h2>Mi Blog</h2>
-      <div className="container">
+      <div className="containerblog">
         <div id="slide">
           <div className="item" style={{ backgroundImage:`url(${imag1})` }}>
             <div className="content">

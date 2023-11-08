@@ -75,8 +75,8 @@
 }
 .radi {
   background-color: #020202;
-  padding: 28px;
+  padding: 12px;
   border-radius: 50%;
-  height: 121px;
+  height: 60px;
   cursor: pointer;
 }

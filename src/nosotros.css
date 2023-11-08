@@ -28,7 +28,6 @@
 
 .sectionN {
   display: flex; /* Utiliza un contenedor flexible para alinear las secciones lado a lado */
-  height: 90vh; /* La sección ocupa toda la altura de la ventana */
   text-align: center; /* Alinea el contenido al centro */
   padding: 20px; /* Espaciado interior */
   border-radius: 10px; /* Bordes redondeados para el contenedor */

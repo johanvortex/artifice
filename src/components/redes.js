@@ -47,10 +47,14 @@ function redes() {
                 style={{
                   display: "flex",
                   justifyContent: "center",
-                  alignItems: "center",
+                  alignItems: "end",
                 }}
               >
-                <div className="radi" onClick={redirigirASocialFacebook}>
+                <div className="radi" onClick={redirigirASocialFacebook}
+                style={{
+                  marginLeft:"10rem"
+                }}
+                >
                   <img src={ImagenFacebook} alt="Descripción de la imagen" />
                 </div>
               </Grid>
@@ -62,7 +66,7 @@ function redes() {
                 style={{
                   display: "flex",
                   justifyContent: "center",
-                  alignItems: "center",
+                  alignItems: "end",
                 }}
               >
                 <div className="radi" onClick={redirigirASocialWhatsapp}>
@@ -77,10 +81,14 @@ function redes() {
                 style={{
                   display: "flex",
                   justifyContent: "center",
-                  alignItems: "center",
+                  alignItems: "start",
                 }}
               >
-                <div className="radi" onClick={redirigirASocialInstagram}>
+                <div className="radi" onClick={redirigirASocialInstagram} style={{
+                  marginTop:"15px",
+                  marginLeft:"10rem"
+
+                }}>
                   <img src={ImagenInstagram} alt="Descripción de la imagen" />
                 </div>
               </Grid>
@@ -92,11 +100,16 @@ function redes() {
                 style={{
                   display: "flex",
                   justifyContent: "center",
-                  alignItems: "center",
+                  alignItems: "start",
                 }}
               >
-                <div className="radi" onClick={redirigirASocialLinkerin}>
-                  <img src={ImagenPinte} alt="Descripción de la imagen" />
+                <div className="radi" onClick={redirigirASocialLinkerin}
+                style={{
+                  marginTop:"15px"
+                }}
+                >
+                  <img src={ImagenPinte} 
+                  alt="Descripción de la imagen"/>
                 </div>
               </Grid>
             </Grid>

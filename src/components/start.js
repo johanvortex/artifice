@@ -12,26 +12,10 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import { Grid } from "@mui/material";
 function App() {
+  
   return (
     <div className="container">
-      <div className="app-header">
-        <div className="logo">
-          <img
-            src={Logo}
-            alt="Logo"
-            style={{ maxWidth: "120px", maxHeight: "35px" }}
-          />
-        </div>
-        <nav className="nav-right">
-          <a href="/">Inicio</a>
-          <a href="/shop">Nosotros</a>
-          <a href="/blog">Servicios</a>
-          <a href="/media">Galerias</a>
-          <a href="/shortcode">Contacto</a>
-          <div className="separator"></div>
-          <a href="/search">Blog</a>
-        </nav>
-      </div>
+     
       <Grid className="section" xs={12} lg={12}>
         <Grid container spacing={2} className="carousel-container">
           <Grid

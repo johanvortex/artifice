@@ -23,6 +23,7 @@ function Nosotros() {
               </div>
            </div>
         </div>
+        <hr/>
     </div>
     <div className='contmision'>
           <div className='sectionN'>

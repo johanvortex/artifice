@@ -1,0 +1,78 @@
+.containergal{
+    background-image: url('./assets/img/fondoprimavera.jpg');
+    background-size: cover; /* Para que la imagen se ajuste al tamaño del contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    width: 100%; /* Ancho del contenedor */
+    height: 900px; /* Alto del contenedor */ 
+    position: relative; /* Asegura que los elementos hijos se posicionen con respecto a este contenedor */
+    padding: 2% 3% 4% 2%;
+}
+ /* Añade una superposición semitransparente */
+ .contendordes {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Color de fondo semitransparente  */
+  }
+  .contendordes h1 {
+    margin-top: 2% ;
+    color: #27201b;
+    font-size: 50px; /* Ajusta el tamaño del texto, por ejemplo, 36 píxeles */
+    font-weight: bold; /* Establece la negrilla del texto */
+  }
+  .contendordes hr {
+    
+    margin: 0 auto ;
+    width: 80%; /* Ajusta la longitud deseada en píxeles */
+    height: 2px; /* Establece el grosor de la línea en píxeles */
+    background-color: #a5a29e; /* Establece el color de la línea */
+  }
+  .contendordes h2 {
+    margin: 2% ;
+    color: #f3dece;
+    font-size: 45px; /* Ajusta el tamaño del texto, por ejemplo, 36 píxeles */
+    font-weight: bold; /* Establece la negrilla del texto */
+    text-align: left; /* Alinea el texto a la izquierda */
+  }
+
+
+  /* Establece el contenedor de la grilla */ 
+  .grid-containergale {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1); /* Agrega un borde difuminado */
+      
+  }
+  
+  .cell {
+    border: 1px solid #ccc;
+    padding: 0px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1); /* Agrega un borde difuminado */
+  }
+  .cell-1-4 {
+    grid-row: 1 / span 2; /* Fusiona dos filas */
+    grid-column: 1 / 2; /* Fusiona dos columnas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1); /* Agrega un borde difuminado */
+  }
+  
+  
+  .image-container {
+    position: relative;
+    width: 100%; /* Ancho de tu imagen */
+    height: 100%;
+  }
+  .image-container1 {
+    position: relative;
+    width: 100%; /* Ancho de tu imagen */
+    height: 100%;
+  }
+  
+  img {
+    width: 100%;
+    height: 100%; /* La imagen ocupará todo el alto del contenedor */
+    object-fit: cover; /* Para mantener la proporción y recortar si es necesario */
+  }

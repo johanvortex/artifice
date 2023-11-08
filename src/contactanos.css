@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .containercontac{
+    flex: 1; /* La sección izquierda ocupa todo el espacio disponible en el contenedor */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo con transparencia en la sección izquierda */
+    padding: 20px; /* Espaciado interior */
+    
+  
+  }
+  
+  
+  .sectionC {
+    background-color: white;
+    display: flex; /* Utiliza un contenedor flexible para alinear las secciones lado a lado */
+    height: 90vh; /* La sección ocupa toda la altura de la ventana */
+    text-align: center; /* Alinea el contenido al centro */
+    padding: 20px; /* Espaciado interior */
+    border-radius: 10px; /* Bordes redondeados para el contenedor */
+    
+  }
+  
+  
+  /* Estilo para la sección izquierda */
+  .left-sectionC {
+    flex: 1; /* La sección izquierda ocupa todo el espacio disponible en el contenedor */
+    padding: 20px 20px 20px 60px; /* Espaciado interior */
+    color: #362d25; /* Color de texto en la sección izquierda */
+    text-align: left;
+  }
+  .left-sectionC h1{
+    padding: 4% 4% ;
+    font-weight: 1000; /* Aumenta el valor para hacer el texto más ancho (negrita) */
+  }
+  .left-sectionC h3{
+    padding-bottom: 8%;
+  }
+
+  .right-sectionC {
+    background-color: #49413A;
+    flex: 1; /* La sección derecha ocupa todo el espacio disponible en el contenedor */
+    padding: 20px; /* Espaciado interior */
+    color: #FFFFFF; /* Color de texto en la sección derecha */
+    margin: 20px 20px;
+  }
+  .right-sectionC h1 {
+    text-align: left;
+    padding: 8% 8% ;
+    font-weight: 1000; /* Aumenta el valor para hacer el texto más ancho (negrita) */
+  }
+
+  .right-sectionC p{
+    text-align: left;
+    padding: 5% 8%;
+    font-size:19px;
+}
+
+  .icono {
+    color: #FFFFFF; /* Color del icono */
+    font-size: 2.7em; /* Tamaño del icono */
+    margin-right: 40px; /* Margen a la derecha del icono */
+  }
+
+/* Estilos para el formulario */
+  .formulario label {
+    display: block; /* Hace que las etiquetas sean bloques para que aparezcan en líneas separadas */
+    margin-bottom: 5px; /* Espacio de 5 píxeles debajo de cada etiqueta */
+  }
+  
+  .formulario input,
+  .formulario textarea {
+    width: 100%; /* Ancho del 100% para que ocupen todo el ancho del formulario */
+    padding: 10px; /* Relleno de 10 píxeles en los campos de entrada de texto */
+    margin-bottom: 15px; /* Espacio de 15 píxeles debajo de cada campo de entrada de texto */
+    border: 1px solid #ccc; /* Borde gris claro con 1 píxel de grosor alrededor de los campos de entrada */
+    border-radius: 5px; /* Bordes redondeados con un radio de 5 píxeles */
+  }
+  .formulario button {
+    background-color: #49413A; /* Fondo para el botón */
+    color: #fff; /* Texto en blanco */
+    padding: 10px 50px; /* Relleno de 10 píxeles en vertical y 20 píxeles en horizontal */
+    border: none; /* Sin borde alrededor del botón */
+    border-radius: 5px; /* Bordes redondeados con un radio de 5 píxeles */
+    cursor: pointer; /* Cursor de flecha al pasar por encima, indicando que es interactivo */
+  }
+  
+  

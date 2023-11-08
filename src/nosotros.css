@@ -1,56 +1,125 @@
 *{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 .containerN hr {
-    height: 2px; /* Altura de la línea */
-    background-color:#d6c6b4; /* Color de la línea (puedes ajustar el color) */
-    margin: 10px 40px; /* Espacio alrededor de la línea (ajusta según tus necesidades) */
+  height: 2px; /* Altura de la línea */
+  background-color:#d6c6b4; /* Color de la línea (puedes ajustar el color) */
+  margin: 10px 40px; /* Espacio alrededor de la línea (ajusta según tus necesidades) */
 
-  }
+}
 
-  .containerN {
-    background-size: cover; /* Escala la imagen de fondo para cubrir todo el contenedor y que se vea bien la imagen no cortada  */
-    background-position: center; /* Coloca la imagen de fondo en el centro del contenedor */
-    height: 100vh; /* Asegura que el fondo ocupe toda la altura de la ventana  */
-    background-image: url('/src/assets/img/nosotros.jpg') ; /* Ruta a tu imagen de fondo */
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo con transparencia (ajusta el valor 0.7) */
-    padding-top: 10px; /* Agrega espacio de relleno alrededor del contenido */
-    
-  }
-  .contmision{
-    flex: 1; /* La sección izquierda ocupa todo el espacio disponible en el contenedor */
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo con transparencia en la sección izquierda */
-    padding: 20px; /* Espaciado interior */
-    color: #d6c6b4; /* Color de texto en la sección izquierda */
-  }
-
-  .sectionN {
-    display: flex; /* Utiliza un contenedor flexible para alinear las secciones lado a lado */
-    height: 90vh; /* La sección ocupa toda la altura de la ventana */
-    text-align: center; /* Alinea el contenido al centro */
-    padding: 20px; /* Espaciado interior */
-    border-radius: 10px; /* Bordes redondeados para el contenedor */
-    
-  }
+.containerN {
+  background-size: cover; /* Escala la imagen de fondo para cubrir todo el contenedor y que se vea bien la imagen no cortada  */
+  background-position: center; /* Coloca la imagen de fondo en el centro del contenedor */
+  height: 100vh; /* Asegura que el fondo ocupe toda la altura de la ventana  */
+  background-image: url('/src/assets/img/nosotros.jpg') ; /* Ruta a tu imagen de fondo */
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo con transparencia (ajusta el valor 0.7) */
+  padding-top: 10px; /* Agrega espacio de relleno alrededor del contenido */
   
-  /* Estilo para la sección izquierda */
-  .left-sectionN {
-    flex: 1; /* La sección izquierda ocupa todo el espacio disponible en el contenedor */
-    padding: 20px; /* Espaciado interior */
-    color: #d6c6b4; /* Color de texto en la sección izquierda */
-  }
-  .right-sectionN {
-    flex: 1; /* La sección derecha ocupa todo el espacio disponible en el contenedor */
-    padding: 20px; /* Espaciado interior */
-    color: #d6c6b4; /* Color de texto en la sección derecha */
-    margin: 20px 20px;
-  }
-  .stilo-img img{
-    margin-top: 20%; /* Margen superior para las imágenes */
-    margin-bottom: 10%; /* Margen inferior para las imágenes */
-  }
-  .left-sectionN h3{
-    margin-top: 30%;
-  }
+}
+.contmision{
+  flex: 1; /* La sección izquierda ocupa todo el espacio disponible en el contenedor */
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo con transparencia en la sección izquierda */
+  padding: 20px; /* Espaciado interior */
+  color: #d6c6b4; /* Color de texto en la sección izquierda */
+
+}
+
+.sectionN {
+  display: flex; /* Utiliza un contenedor flexible para alinear las secciones lado a lado */
+  height: 90vh; /* La sección ocupa toda la altura de la ventana */
+  text-align: center; /* Alinea el contenido al centro */
+  padding: 20px; /* Espaciado interior */
+  border-radius: 10px; /* Bordes redondeados para el contenedor */
+  
+}
+
+/* Estilo para la sección izquierda */
+.left-sectionN {
+  flex: 1; /* La sección izquierda ocupa todo el espacio disponible en el contenedor */
+  padding: 20px; /* Espaciado interior */
+  color: #d6c6b4; /* Color de texto en la sección izquierda */
+}
+.right-sectionN {
+  flex: 1; /* La sección derecha ocupa todo el espacio disponible en el contenedor */
+  padding: 20px; /* Espaciado interior */
+  color: #d6c6b4; /* Color de texto en la sección derecha */
+  margin: 20px 20px;
+}
+.stilo-img img{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80% ;
+  margin-top: -10%;
+}
+.linea.horizontal{
+  margin-bottom: 20%;
+}
+.left-sectionN{
+  padding-top: 8%;
+}
+.left-sectionN h1{
+  margin-bottom: 5%;
+  font-size: 4em;
+
+}
+.left-sectionN hr{
+  margin-bottom: 5%;
+}
+.left-sectionN h3{
+text-align: start;
+}
+
+.right-sectionN{
+padding-top: 8%;
+}
+.right-sectionN h1{
+margin-bottom: 5%;
+font-size: 4em;
+
+}
+.right-sectionN hr{
+margin-bottom: 5%;
+}
+.right-sectionN h3{
+text-align: start;
+}
+
+.contmision p{
+  text-align: start;
+  margin-bottom: 2rem;
+}
+.left-sectionva {
+  flex: 1; /* La sección izquierda ocupa todo el espacio disponible en el contenedor */
+  padding: 20px; /* Espaciado interior */
+  color: #d6c6b4; /* Color de texto en la sección izquierda */
+  border-right: 2px solid #ccc; /* Línea vertical a la derecha del elemento izquierdo */
+}
+.right-sectionva {
+  flex: 1; /* La sección derecha ocupa todo el espacio disponible en el contenedor */
+  padding: 20px; /* Espaciado interior */
+  color: #d6c6b4; /* Color de texto en la sección derecha */
+  margin: 0px 20px;
+}
+
+.icon {
+  color: rgb(66, 66, 70); /* Color del icono */
+  font-size: 3em; /* Tamaño del icono */
+  margin-right: 20px; /* Margen a la derecha del icono */
+ 
+}
+
+/* Estilos para el texto en negrita */
+.bold-text {
+  font-weight: bold; /* Hace que el texto esté en negrita */
+}
+
+
+/* Estilos para el texto normal */
+.normal-text {
+  font-weight: normal; /* Hace que el texto esté en formato normal (no negrita) */
+}

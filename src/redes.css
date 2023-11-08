@@ -1,65 +1,80 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
-/* Estilo para el contenedor (container) que contendrá el contenido y el fondo */
 .containerR {
-    background-size: cover; /* Escala la imagen de fondo para cubrir todo el contenedor y que se vea bien la imagen no cortada  */
-    background-position: center; /* Coloca la imagen de fondo en el centro del contenedor */
-    height: 100vh; /* Asegura que el fondo ocupe toda la altura de la ventana (viewport) */
-    background-image: url('/src/assets/img/fondoredes.jpg') ; /* Ruta a tu imagen de fondo */
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo con transparencia (ajusta el valor 0.7) */
-    padding-top: 10px; /* Agrega espacio de relleno alrededor del contenido */
-    
+  background-size: cover;
+  background-position: center;
+  background-image: url("/src/assets/img/fondoredes.jpg");
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  padding-top: 10px;
+}
+@media (max-width: 888px) {
+  .containerR {
+    height: 179vh;
   }
-  .sectionR {
-    display: flex; /* Utiliza un contenedor flexible para alinear las secciones lado a lado */
-    height: 90vh; /* La sección ocupa toda la altura de la ventana */
-    text-align: center; /* Alinea el contenido al centro */
-    padding: 20px; /* Espaciado interior */
-    border-radius: 10px; /* Bordes redondeados para el contenedor */
-    
-  }
-  
-  /* Estilo para la sección izquierda */
-  .left-sectionR {
-    flex: 1; /* La sección izquierda ocupa todo el espacio disponible en el contenedor */
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo con transparencia en la sección izquierda */
-    padding: 20px; /* Espaciado interior */
-    color: #d6c6b4; /* Color de texto en la sección izquierda */
-  }
-  .right-sectionR {
-    flex: 1; /* La sección derecha ocupa todo el espacio disponible en el contenedor */
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo con transparencia en la sección derecha */
-    padding: 20px; /* Espaciado interior */
-    color: #d6c6b4; /* Color de texto en la sección derecha */
-  }
+}
+.carousel-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+}
 
-  
+.sectionR {
+  display: flex; /* Utiliza un contenedor flexible para alinear las secciones lado a lado */
+  height: 90vh; /* La sección ocupa toda la altura de la ventana */
+  text-align: center; /* Alinea el contenido al centro */
+  padding: 20px; /* Espaciado interior */
+  border-radius: 10px; /* Bordes redondeados para el contenedor */
+}
+@media (max-width: 888px) {
+  .section {
+    height: 174vh;
+  }
+}
 
-  .left-sectionR {
-    display: grid; /* Activa CSS Grid en left-sectionR */
-    grid-template-columns: repeat(2, 1fr); /* Divide en 2 columnas */
-    grid-template-rows: repeat(2, 1fr); /* Divide en 2 filas */
-    gap: 10px; /* Espaciado entre las celdas del grid */
-  }
+.left-sectionR {
+  flex: 1; /* La sección izquierda ocupa todo el espacio disponible en el contenedor */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Fondo con transparencia en la sección izquierda */
+  padding: 20px; /* Espaciado interior */
+  color: #d6c6b4; /* Color de texto en la sección izquierda */
+}
+.right-sectionR {
   
-  .grid-container {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .grid-item {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    color: #d6c6b4;
-    text-align: center;
-  }
-  .right-sectionR h1{
-    margin-top: 10%;
-    margin-bottom: 20%;
-  }
+  padding: 20px; /* Espaciado interior */
+  color: #d6c6b4; /* Color de texto en la sección derecha */
+}
 
-  
+.left-sectionR {
+  display: grid; /* Activa CSS Grid en left-sectionR */
+  grid-template-columns: repeat(2, 1fr); /* Divide en 2 columnas */
+  grid-template-rows: repeat(2, 1fr); /* Divide en 2 filas */
+  gap: 10px; /* Espaciado entre las celdas del grid */
+}
+
+.grid-container {
+  width: 100%;
+  height: 100%;
+}
+
+.grid-item {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  color: #d6c6b4;
+  text-align: center;
+}
+.right-sectionR h1 {
+  margin-top: 10%;
+  margin-bottom: 20%;
+}
+.radi {
+  background-color: #020202;
+  padding: 16px;
+  border-radius: 50%;
+  height: 85px;
+}

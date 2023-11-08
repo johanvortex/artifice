@@ -12,14 +12,12 @@ body {
   padding-top: 20px; /* Agrega espacio de relleno alrededor del contenido */
 }
 @media (max-width: 888px) {
-  .container{
+  .container {
     height: 179vh;
   }
-  .section{
+  .section {
     height: 174vh;
   }
-
-  
 }
 
 .app-header {
@@ -81,12 +79,9 @@ body {
   border-radius: 10px; /* Bordes redondeados para el contenedor */
 }
 @media (max-width: 888px) {
- 
-  .section{
+  .section {
     height: 174vh;
   }
-
-  
 }
 
 /* Estilo para la sección izquierda */
@@ -131,25 +126,25 @@ body {
   height: 100%;
   object-fit: cover;
 }
-.dis{
+.dis {
   display: flex;
 }
 .imgEffect {
   height: auto;
-  border-radius:10px;
+  border-radius: 10px;
 }
-.card{
+.card {
   position: relative;
   text-align: center;
 }
-.cardConten{
+.cardConten {
   position: absolute;
   top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #000000;
 }
-.cardContenFooter{
+.cardContenFooter {
   position: absolute;
   bottom: -21px;
   left: 50%;

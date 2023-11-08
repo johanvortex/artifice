@@ -12,8 +12,8 @@ function App() {
     <Start/>
     <img className='trans' src={trans} alt="Imagen 2" />
     <Redes/>
-    {/* <img className='trans' src={trans} alt="Imagen 2" />
-    <Nosotros/> */}
+    <img className='trans' src={trans} alt="Imagen 2" />
+    <Nosotros/>
   </div>
 );
 }

@@ -3,7 +3,7 @@ import '../nosotros.css';
 import mision from'../assets/img/mision.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPalette, faHandshake, faCheck, faThumbsUp, faHeart, faSeedling, faLightbulb } from '@fortawesome/free-solid-svg-icons';
-import Daniela from '../assets/img/FotoDaniela.png';
+
 
 function Nosotros() {
 

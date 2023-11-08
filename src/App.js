@@ -19,6 +19,7 @@ function App() {
     <Redes/>
     <img className='trans' src={trans} alt="Imagen 2" />
     <Nosotros/>
+    <Contactanos/>
   </div>
 );
 }

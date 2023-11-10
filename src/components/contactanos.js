@@ -3,7 +3,7 @@ import '../contactanos.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone, faBuilding } from '@fortawesome/free-solid-svg-icons';
 
-function Contactanos() { // Cambia el nombre del componente a "Contactanos"
+function Contactanos() {
   const [formData, setFormData] = useState({
     nombre: '',
     email: '',
@@ -15,17 +15,33 @@ function Contactanos() { // Cambia el nombre del componente a "Contactanos"
     setFormData({ ...formData, [name]: value });
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Aquí puedes realizar acciones con los datos del formulario, como enviarlos a un servidor o realizar validaciones.
-    console.log('Datos del formulario:', formData);
+
+    try {
+      const response = await fetch('http://localhost:3003/enviar-correo', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        console.log('Correo enviado exitosamente');
+      } else {
+        console.error('Error al enviar el correo');
+      }
+    } catch (error) {
+      console.error('Error de red', error);
+    }
   }
 
   return (
     <div className='containercontac'>
       <div className='sectionC'>
         <div className='left-sectionC'> 
-          <h1>Contactanos</h1>
+          <h1>Contáctanos</h1>
           <h3>En Artifice, estamos apasionados por transformar espacios en entornos inspiradores y funcionales. Nos encantaría ser parte de tu próximo proyecto de diseño de interiores y ayudarte a crear un espacio que refleje tu estilo y personalidad.</h3>
         <form onSubmit={handleSubmit} className="formulario">
           <div>
@@ -64,7 +80,7 @@ function Contactanos() { // Cambia el nombre del componente a "Contactanos"
         </div>
 
         <div className='right-sectionC'>
-          <h1>Informacion </h1>
+          <h1>Información </h1>
           <p>
             <FontAwesomeIcon icon={faEnvelope} className='icono' />
             artificieinteriordesign@gmail.com
@@ -75,7 +91,7 @@ function Contactanos() { // Cambia el nombre del componente a "Contactanos"
           </p>
           <p>
             <FontAwesomeIcon icon={faBuilding} className='icono' />
-            <span className='normal-text'> Cll. 4F # 39B-20 /Bogota-Colombia</span>
+            <span className='normal-text'> Cll. 4F # 39B-20 /Bogotá-Colombia</span>
           </p>
         </div>
       </div>

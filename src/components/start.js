@@ -34,12 +34,7 @@ function App() {
                 style={{ maxWidth: "400px", maxHeight: "250px" }}
               ></img>
               <h3 className="text">
-                Diseñamos tu mundo interior. En artífice, creamos espacios
-                funcionales y armoniosos que mejoran tu calidad de vida.
-                Ofrecemos asesoría personalizada, diseño de calidad, producción
-                y entrega puntual. Con experiencia en proyectos para
-                constructoras y clientes particulares, transformamos tus sueños
-                en realidad. Bienvenido a artífice.
+              Diseñamos tu mundo interior. En Artífice, creamos espacios funcionales y armoniosos que mejoran tu calidad de vida. Ofrecemos asesoría personalizada, diseño de calidad, producción y entrega puntual. Con experiencia en proyectos para constructoras y clientes particulares, transformamos tus sueños en realidad. ¡Bienvenido a Artífice!
               </h3>
             </div>
           </Grid>
